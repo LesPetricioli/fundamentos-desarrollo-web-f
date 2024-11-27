@@ -1,0 +1,37 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+color:blueviolet;
+text-shadow: 1px 1px 1px black;
+}
+a{
+    text-decoration: none;
+    /*color: inherit;*/
+    color: rgb(0, 0, 0);
+    background-color: rgb(70, 70, 142);
+}
+
+.diferente{
+    text-shadow: none;
+    color: brown
+}
+
+h1 span{
+    background-color: orange;
+    text-shadow: none;
+}
+
+/*Ejemplo de especificidad*/
+h1{
+    color: greenyellow;
+}
+.blue{
+    color: rgb(78, 78, 150)!important;
+}
+#red{
+    color: brown;
+}
