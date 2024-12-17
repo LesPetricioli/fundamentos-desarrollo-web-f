@@ -1,7 +1,54 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 
+
+
+body{
+background-color: rgb(244, 237, 149);
 }
 
 h1{
+color: red;
 
+
+}
+p{
+    text-decoration: underline;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(92, 8, 92);
+
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.ball{
+   width: 150px;
+   height: 150px;
+   border-radius: 100%;
+    background-color: rgb(16, 4, 117);
+    border: 5px solid black;
+
+}
+
+.text-important{
+
+    font-size: 2rem;
+    background-color: rgb(157, 195, 238);
+    font-style: italic;
+}
+
+#tituloWeb{
+    background-color: rgb(185, 238, 143);
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
 }
