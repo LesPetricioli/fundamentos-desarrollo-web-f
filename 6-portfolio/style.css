@@ -80,6 +80,7 @@ gap: 10px;
 
     /*background-color: rgb(32, 3, 59);*/
     flex: 1;
+    overflow: hidden;
 }
 
 .img-pizza, .img-hoja, .img-tomato{
@@ -116,20 +117,32 @@ gap: 10px;
 .productos-content{
     display: flex;
     gap: 10px;
+    padding: 20px;
 }
 .product-card{
     flex: 1;
     position: relative;
+    border-radius: 30px;
+    overflow: hidden;
 }
-.productos-content div:nth-child(1){
+/*.productos-content div:nth-child(1){
     background-color: rgb(114, 120, 123);
 }
 .productos-content div:nth-child(2){
     background-color: rgb(101, 103, 98);
-}
+}*/
 .productos-content div:nth-child(3){
     background-color: rgb(110, 107, 106);
 }
+
+.product-card:hover .card-hover{
+    opacity: 1;
+}
+
+/*Card hover*/
+
+
+
 .card-hover{
     display: flex;
     flex-direction: column;
@@ -140,19 +153,27 @@ gap: 10px;
     background-color: rgba(0, 0, 0, 0.51)!important;
     top:0;
     left: 0;
+    opacity: 0;
+    transition-duration: 0.5s;
 }
+
+/*Card hover header*/
+
 .card-hover-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
 }
-.card-hover-footer{
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-    gap: 10px;
+
+.card-hover-header a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
+
+
+
 .btn-guardar{
     background-color: rgb(244, 48, 48);
     color: white;
@@ -160,7 +181,24 @@ gap: 10px;
     border-radius: 25px;
     border: none;
     cursor: pointer;
+    font-weight:bold ;
 }
 .product-card img{
     width: 100%;
+ }
+
+ /*Card hover footer*/
+
+.card-hover-footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 10px;
+}
+
+.card-hover-footer i{
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
 }
